@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
-import NotebookList from "../../components/NotebookList";
+import NotebookList from "@/components/NotebookList";
 import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducts = async () => {
-  const res = await axios.get("/api/notebooks");
+  const res = await axios.get("http://localhost:3000/api/notebooks");
   return res.data;
 };
 

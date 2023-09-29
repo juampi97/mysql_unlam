@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
-import LibroList from "../../components/LibroList";
+import LibroList from "@/components/LibroList";
 import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducts = async () => {
-  const res = await axios.get("/api/libros");
+  const res = await axios.get("http://localhost:3000/api/libros");
   return res.data;
 };
 
