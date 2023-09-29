@@ -4,7 +4,7 @@ import ProyectorList from "../../components/ProyectorList";
 import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducts = async () => {
-  const res = await axios.get("http://localhost:3000/api/proyectores");
+  const res = await axios.get("/api/proyectores");
   return res.data;
 };
 

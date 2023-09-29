@@ -5,7 +5,7 @@ import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducto = async (id) => {
   const instrumentos = await axios.get(
-    "http://localhost:3000/api/instrumentos"
+    "api/instrumentos"
   );
   const instrumento = instrumentos.data.filter((item) => item.nro_inv == id);
   return instrumento;

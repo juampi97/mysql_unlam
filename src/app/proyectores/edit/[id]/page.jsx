@@ -5,7 +5,7 @@ import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducto = async (id) => {
   const proyectores = await axios.get(
-    "http://localhost:3000/api/proyectores"
+    "/api/proyectores"
   );
   const proyector = proyectores.data.filter((item) => item.nro_inv == id);
   return proyector;

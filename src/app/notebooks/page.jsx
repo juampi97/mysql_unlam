@@ -4,7 +4,7 @@ import NotebookList from "../../components/NotebookList";
 import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducts = async () => {
-  const res = await axios.get("http://localhost:3000/api/notebooks");
+  const res = await axios.get("/api/notebooks");
   return res.data;
 };
 
