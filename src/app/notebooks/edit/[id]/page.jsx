@@ -5,7 +5,7 @@ import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducto = async (id) => {
   const notebooks = await axios.get(
-    "/api/notebooks"
+    "http://localhost:3000/api/notebooks"
   );
   const notebook = notebooks.data.filter((item) => item.nro_inv == id);
   return notebook;

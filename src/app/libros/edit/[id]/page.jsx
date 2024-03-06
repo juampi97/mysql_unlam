@@ -5,7 +5,7 @@ import NavbarCustom from "@/components/NavbarCustom";
 
 const getProducto = async (id) => {
   const libros = await axios.get(
-    "/api/libros"
+    "http://localhost:3000/api/libros"
   );
   const libro = libros.data.filter((item) => item.id == id);
   return libro;
